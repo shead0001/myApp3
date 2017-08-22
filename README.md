@@ -1,4 +1,10 @@
 # myApp3: implementazione di una applicazione web (spring + angular 4): no invocazione remota, db relazionale 
+
+1) per avviare  mvnw
+2) se non dovesse funzionare(pagina bianca): yarn install && yarn webpack:build
+
+
+
 This application was generated using JHipster 4.6.2, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.6.2](https://jhipster.github.io/documentation-archive/v4.6.2).
 
 ## Development
