@@ -1,0 +1,14 @@
+version: '2'
+services:
+    myapp3-app:
+        image: myapp3
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:mysql://myapp3-mysql:3306/myapp3?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    myapp3-mysql:
+        extends:
+            file: mysql.yml
+            service: myapp3-mysql
